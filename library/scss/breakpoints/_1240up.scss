@@ -1,0 +1,28 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+/*********************
+HOMEPAGE STYLES
+*********************/
+@import "susy";
+
+.banner {
+	background-image: url("/Topline/wp-content/uploads/2015/05/banner-1240-up.png");
+	@include pad(15%);	
+
+	.banner-content {
+		margin: 60px 0;
+	}
+
+
+}
+
+
+
