@@ -196,7 +196,7 @@ body#tinymce.wp-editor {
   Here is where we declare all our variables like colors, fonts,
   base values, and defaults. We want to make sure this file ONLY
   contains variables that way our files don't get all messy.
-  No one likes a mess.
+  No one likes a mess. 
   
   ******************************************************************/
   /*********************
@@ -347,7 +347,7 @@ body#tinymce.wp-editor {
   /* NOTE: value of "padding-box" is only supported in Gecko. So
   probably best not to use it. I mean, were you going to anyway? */
   width: 731px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "futura", "Futura PT", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
@@ -682,13 +682,13 @@ body#tinymce.wp-editor p {
 }
 /* line 45, ../../scss/editor-style.scss */
 body#tinymce.wp-editor a, body#tinymce.wp-editor a:visited {
-  color: #2980b9;
+  color: #fff;
   /* on hover */
   /* on click */
 }
 /* line 49, ../../scss/editor-style.scss */
 body#tinymce.wp-editor a:hover, body#tinymce.wp-editor a:focus, body#tinymce.wp-editor a:visited:hover, body#tinymce.wp-editor a:visited:focus {
-  color: #216693;
+  color: #e8e8e8;
 }
 /* line 58, ../../scss/editor-style.scss */
 body#tinymce.wp-editor a:link, body#tinymce.wp-editor a:visited:link {

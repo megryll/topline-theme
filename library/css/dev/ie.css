@@ -25,7 +25,7 @@ Stylesheet: Variables
 Here is where we declare all our variables like colors, fonts,
 base values, and defaults. We want to make sure this file ONLY
 contains variables that way our files don't get all messy.
-No one likes a mess.
+No one likes a mess. 
 
 ******************************************************************/
 /*********************
@@ -189,7 +189,7 @@ HOMEPAGE STYLES
 *********************/
 /* line 29, ../../scss/breakpoints/_481up.scss */
 .banner {
-  background-image: url("/Topline/wp-content/uploads/2015/05/banner-481-768.png");
+  background-image: url("/wp-content/themes/topline/library/images/banner-481-768.png");
   font-size: 2em;
   padding-left: 10%;
   padding-right: 10%;
@@ -204,79 +204,13 @@ HOMEPAGE STYLES
   margin: 50px 0;
 }
 
-/* line 49, ../../scss/breakpoints/_481up.scss */
+/* line 47, ../../scss/breakpoints/_481up.scss */
 .service-block .feat-img {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
 }
 
-/*********************
-NAVIGATION STYLES
-*********************/
-/* .menu is clearfixed inside mixins.scss */
-/* line 61, ../../scss/breakpoints/_481up.scss */
-.menu {
-  /* end .menu ul */
-}
-/* line 62, ../../scss/breakpoints/_481up.scss */
-.menu ul {
-  /* end .menu ul li */
-  /* highlight current page */
-  /* end current highlighters */
-}
-/* line 63, ../../scss/breakpoints/_481up.scss */
-.menu ul li {
-  /*
-  plan your menus and drop-downs wisely.
-  */
-}
-/* line 64, ../../scss/breakpoints/_481up.scss */
-.menu ul li a {
-  /*
-  you can use hover styles here even though this size
-  has the possibility of being a mobile device.
-  */
-}
-
-/* end .menu */
-/*********************
-POSTS & CONTENT STYLES
-*********************/
-/* entry content */
-/* line 109, ../../scss/breakpoints/_481up.scss */
-.entry-content {
-  /* at this larger size, we can start to align images */
-}
-/* line 113, ../../scss/breakpoints/_481up.scss */
-.entry-content .alignleft, .entry-content img.alignleft {
-  margin-right: 1.5em;
-  display: inline;
-  float: left;
-}
-/* line 118, ../../scss/breakpoints/_481up.scss */
-.entry-content .alignright, .entry-content img.alignright {
-  margin-left: 1.5em;
-  display: inline;
-  float: right;
-}
-/* line 123, ../../scss/breakpoints/_481up.scss */
-.entry-content .aligncenter, .entry-content img.aligncenter {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  clear: both;
-}
-
-/* end .entry-content */
-/*********************
-FOOTER STYLES
-*********************/
-/*
-check your menus here. do they look good?
-do they need tweaking?
-*/
-/* end .footer-links */
 /******************************************************************
 Site Name:
 Author:
@@ -290,170 +224,20 @@ and other resources. You'll also notice the grid starts to
 come into play. Have fun!
 
 ******************************************************************/
-/*********************
-HOMEPAGE STYLES
-*********************/
-/* line 20, ../../scss/breakpoints/_768up.scss */
+/* line 15, ../../scss/breakpoints/_768up.scss */
 .banner {
-  background-image: url("/Topline/wp-content/uploads/2015/05/banner-768-1030.png");
+  background-image: url("/wp-content/themes/topline/library/images/banner-768-1030.png");
   font-size: 2.5em;
 }
 
 /*********************
-GENERAL STYLES
-*********************/
-/*********************
 LAYOUT & GRID STYLES
 *********************/
-/* line 39, ../../scss/breakpoints/_768up.scss */
+/* line 24, ../../scss/breakpoints/_768up.scss */
 .wrap {
   width: 760px;
 }
 
-/*********************
-HEADER STYLES
-*********************/
-/*********************
-NAVIGATION STYLES
-*********************/
-/* line 55, ../../scss/breakpoints/_768up.scss */
-.nav {
-  border: 0;
-  /* end .menu ul li */
-  /* highlight current page */
-  /* end current highlighters */
-}
-/* line 57, ../../scss/breakpoints/_768up.scss */
-.nav ul {
-  margin-top: 0;
-}
-/* line 60, ../../scss/breakpoints/_768up.scss */
-.nav li {
-  float: left;
-  position: relative;
-  /*
-  plan your menus and drop-downs wisely.
-  */
-  /* showing sub-menus */
-}
-/* line 64, ../../scss/breakpoints/_768up.scss */
-.nav li a {
-  border-bottom: 4px solid #fff;
-  /*
-  you can use hover styles here even though this size
-  has the possibility of being a mobile device.
-  */
-}
-/* line 71, ../../scss/breakpoints/_768up.scss */
-.nav li a:hover, .nav li a:focus {
-  border-bottom: 4px solid #002654;
-}
-/* line 82, ../../scss/breakpoints/_768up.scss */
-.nav li ul.sub-menu,
-.nav li ul.children {
-  margin-top: 0;
-  border: 1px solid #ccc;
-  border-top: 0;
-  position: absolute;
-  visibility: hidden;
-  z-index: 8999;
-  /* highlight sub-menu current page */
-}
-/* line 91, ../../scss/breakpoints/_768up.scss */
-.nav li ul.sub-menu li,
-.nav li ul.children li {
-  /*
-  if you need to go deeper, go nuts
-  just remember deeper menus suck
-  for usability. k, bai.
-  */
-}
-/* line 93, ../../scss/breakpoints/_768up.scss */
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
-  padding-left: 10px;
-  border-right: 0;
-  display: block;
-  width: 180px;
-  border-bottom: 1px solid #ccc;
-}
-/* line 110, ../../scss/breakpoints/_768up.scss */
-.nav li ul.sub-menu li:last-child a,
-.nav li ul.children li:last-child a {
-  border-bottom: 0;
-}
-/* line 120, ../../scss/breakpoints/_768up.scss */
-.nav li ul.sub-menu li ul,
-.nav li ul.children li ul {
-  top: 0;
-  left: 100%;
-}
-/* line 135, ../../scss/breakpoints/_768up.scss */
-.nav li:hover > ul {
-  top: auto;
-  visibility: visible;
-}
-
-/* end .nav */
-/*********************
-SIDEBARS & ASIDES
-*********************/
-/* line 155, ../../scss/breakpoints/_768up.scss */
-.sidebar {
-  margin-top: 2.2em;
-}
-
-/* line 159, ../../scss/breakpoints/_768up.scss */
-.widgettitle {
-  border-bottom: 2px solid #444;
-  margin-bottom: 0.75em;
-}
-
-/* line 164, ../../scss/breakpoints/_768up.scss */
-.widget {
-  padding: 0 10px;
-  margin: 2.2em 0;
-}
-/* line 169, ../../scss/breakpoints/_768up.scss */
-.widget ul li {
-  margin-bottom: 0.75em;
-  /* deep nesting */
-}
-/* line 177, ../../scss/breakpoints/_768up.scss */
-.widget ul li ul {
-  margin-top: 0.75em;
-  padding-left: 1em;
-}
-
-/* links widget */
-/* meta widget */
-/* pages widget */
-/* recent-posts widget */
-/* archives widget */
-/* tag-cloud widget */
-/* calendar widget */
-/* category widget */
-/* recent-comments widget */
-/* search widget */
-/* text widget */
-/*********************
-FOOTER STYLES
-*********************/
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-/* line 285, ../../scss/breakpoints/_768up.scss */
-.footer-links ul li {
-  /*
-  be careful with the depth of your menus.
-  it's very rare to have multi-depth menus in
-  the footer.
-  */
-}
-
-/* end .footer-links */
 /******************************************************************
 Site Name:
 Author:
@@ -469,15 +253,14 @@ HOMEPAGE STYLES
 *********************/
 /* line 17, ../../scss/breakpoints/_1030up.scss */
 .banner {
-  background-image: url("/Topline/wp-content/uploads/2015/05/banner-1030-1240.png");
-  font-size: 2.8em;
+  background-image: url("/wp-content/themes/topline/library/images/banner-1030-1240.png");
 }
-/* line 20, ../../scss/breakpoints/_1030up.scss */
+/* line 19, ../../scss/breakpoints/_1030up.scss */
 .banner .banner-content {
   margin: 40px 0;
 }
 
-/* line 25, ../../scss/breakpoints/_1030up.scss */
+/* line 24, ../../scss/breakpoints/_1030up.scss */
 .wrap {
   width: 1040px;
 }

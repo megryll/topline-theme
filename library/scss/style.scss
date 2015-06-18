@@ -22,7 +22,6 @@ Stylesheet: Main Stylesheet
 @import "partials/mixins";
 
 // the grid
-@import "partials/grid";
 @import "susy";
 @import 'breakpoint';
 
@@ -35,7 +34,7 @@ Stylesheet: Main Stylesheet
 // forms (inputs & labels)
 @import "modules/forms";
 
-
+@import "breakpoints/footer";
 
 // styles in base.scss
 @import "breakpoints/base";

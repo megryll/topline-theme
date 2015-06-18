@@ -1,74 +1,69 @@
 <?php get_header(); ?>
 
-			<div id="content">
+			
 
-				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+<section class="banner">
+		<div class="banner-content">
+			<h1 class="page-title"><?php single_cat_title(); ?></h1>
+		</div>
+	</section>
 
-							<?php
-							the_archive_title( '<h1 class="page-title">', '</h1>' );
-							the_archive_description( '<div class="taxonomy-description">', '</div>' );
-							?>
+	<div id="content">
 							
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+		<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
-								<header class="entry-header article-header">
+			<div id="one-spacer">&nbsp</div>
 
-									<h3 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<p class="byline entry-meta vcard">
-										<?php printf( __( 'Posted', 'bonestheme' ).' %1$s %2$s',
-                  							     /* the time the post was published */
-                  							     '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
-                       								/* the author of the post */
-                       								'<span class="by">'.__('by', 'bonestheme').'</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>'
-                    							); ?>
-									</p>
-
-								</header>
-
-								<section class="entry-content cf">
-
-									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
-
-									<?php the_excerpt(); ?>
-
-								</section>
-
-								<footer class="article-footer">
-
-								</footer>
-
-							</article>
-
-							<?php endwhile; ?>
-
-									<?php bones_page_navi(); ?>
-
-							<?php else : ?>
-
-									<article id="post-not-found" class="hentry cf">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the archive.php template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
-
-							<?php endif; ?>
-
-						</main>
-
-					<?php get_sidebar(); ?>
-
-				</div>
-
+		
+			<div id="service-information">
+			<div id="image-container">
+				<?php echo get_custom_field('product_image'); ?>
 			</div>
+			<div id="main-description">	
+				<h3><?php the_title(); ?></h3>
+				<?php the_content(); ?>	
+			</div>
+			<div id="meta-content">
+				<div id="one-spacer">&nbsp</div>
+				<div id="warranty-information">
+					<h3>Warranty Information</h3>
+					<p><?php echo get_custom_field('warranty_information'); ?></p>
+				</div>
+				<div id="supplier-logos">
+					<h3>Suppliers</h3>
+					<?php echo get_custom_field('supplier_logo'); ?>
+				</div>
+			</div>
+		</div>
+
+		</article>
+		<hr>
+
+		<?php endwhile; ?>
+
+				<?php bones_page_navi(); ?>
+
+		<?php else : ?>
+
+				<article id="post-not-found" class="hentry cf">
+					<header class="article-header">
+						<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+					</header>
+					<section class="entry-content">
+						<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+					</section>
+					<footer class="article-footer">
+							<p><?php _e( 'This is the error message in the archive.php template.', 'bonestheme' ); ?></p>
+					</footer>
+				</article>
+
+		<?php endif; ?>
+
+</div>
+
 
 <?php get_footer(); ?>

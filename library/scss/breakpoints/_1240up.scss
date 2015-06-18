@@ -14,7 +14,7 @@ HOMEPAGE STYLES
 @import "susy";
 
 .banner {
-	background-image: url("/Topline/wp-content/uploads/2015/05/banner-1240-up.png");
+	background-image: url("/wp-content/themes/topline/library/images/banner-1240-up.png");
 	@include pad(15%);	
 
 	.banner-content {

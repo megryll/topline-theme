@@ -1,0 +1,87 @@
+.footer {
+	clear: both;
+	background-color: $dark-blue;
+	color: $light-gray;
+	font-family: "chaparral-pro", $serif;
+
+
+	.footer-image {
+		background: url('/wp-content/themes/topline/library/images/pano-vic.png') no-repeat center center;
+		height: 388px;
+
+	}
+
+	.footer-links ul li {
+		margin: 5px 0;
+		transition: all 0.2s ease;
+
+		&:hover {
+			transform: translateX(3px);
+		}
+	}
+
+
+} 
+.bottom-footer {
+		background-color: $topline-green;
+		font-family: "chaparral-pro", $serif;
+		padding: 10px 15px;
+		height: 40px;
+
+
+		@include breakpoint(827px) {
+			padding: 10px 270px;
+		}
+
+			p {
+				margin: 0px;
+				color: $white;
+			}
+			.copyright {
+				float: left;
+			}
+
+			.branding {
+				float:right;
+				a {
+					text-decoration:none;
+					color: $white;
+				}
+			}
+	}
+
+	/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+	.footer-links {
+		
+
+	} /* end .footer-links */
+
+
+	.copyright {}
+
+	.footer-nav {
+		border:none;
+		margin: 20px 0 !important;
+
+		a {
+			color: white;
+			float: none;
+			border: none;
+			text-decoration:none;
+			margin-top: 5px;
+		}
+
+		ul {
+
+			li {}
+
+		}
+	}

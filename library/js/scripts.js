@@ -1,16 +1,3 @@
-/*
- * Bones Scripts File
- * Author: Eddie Machado
- *
- * This file should contain any js scripts you want to add to the site.
- * Instead of calling it in the header or throwing it inside wp_head()
- * this file will be called automatically in the footer so as not to
- * slow the page load.
- *
- * There are a lot of example functions and tools in here. If you don't
- * need any of it, just remove it. They are meant to be helpers and are
- * not required. It's your world baby, you can do whatever you want.
-*/
 
 
 /*
@@ -105,16 +92,31 @@ function loadGravatars() {
 } // end function
 
 
+// $(window).resize(function () {
+ 
+//    viewport = updateViewportDimensions();
+ 
+//        if (viewport.width >= 500) {
+//     jQuery('.envira-gallery-public').removeClass('envira-gallery-1-columns').addClass('envira-gallery-3-columns').attr('data-envira-columns', '3');
+//   }
+//   else {
+//     jQuery('.envira-gallery-public').removeClass('envira-gallery-3-columns').addClass('envira-gallery-1-columns').attr('data-envira-columns', '1');
+//   }
+
+// });
+
+
+
+
+
+
+
 /*
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {
 
-  /*
-   * Let's fire off the gravatar function
-   * You can remove this if you don't need it
-  */
-  loadGravatars();
+  jQuery(".envira-gallery-item-inner").prepend("<div class='overlay'><img src='/Topline/wp-content/uploads/2015/06/magnify.png'></div>");
 
 
 }); /* end of as page load scripts */

@@ -500,16 +500,16 @@ table {
 }
 
 /* line 487, ../../scss/partials/_normalize.scss */
-.clearfix, .cf, .comment-respond {
+.clearfix, .cf {
   zoom: 1;
 }
 /* line 489, ../../scss/partials/_normalize.scss */
-.clearfix:before, .clearfix:after, .cf:before, .comment-respond:before, .cf:after, .comment-respond:after {
+.clearfix:before, .clearfix:after, .cf:before, .cf:after {
   content: "";
   display: table;
 }
 /* line 490, ../../scss/partials/_normalize.scss */
-.clearfix:after, .cf:after, .comment-respond:after {
+.clearfix:after, .cf:after {
   clear: both;
 }
 
@@ -531,7 +531,7 @@ Stylesheet: Variables
 Here is where we declare all our variables like colors, fonts,
 base values, and defaults. We want to make sure this file ONLY
 contains variables that way our files don't get all messy.
-No one likes a mess.
+No one likes a mess. 
 
 ******************************************************************/
 /*********************
@@ -704,317 +704,6 @@ probably best not to use it. I mean, were you going to anyway? */
 Site Name:
 Author:
 
-Stylesheet: Grid Stylesheet
-
-I've seperated the grid so you can swap it out easily. It's
-called at the top the style.scss stylesheet.
-
-There are a ton of grid solutions out there. You should definitely
-experiment with your own. Here are some recommendations:
-
-http://gridsetapp.com - Love this site. Responsive Grids made easy.
-http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-http://gridpak.com/ - Create your own responsive grid.
-https://github.com/dope/lemonade - Neat lightweight grid.
-
-
-The grid below is a custom built thingy I modeled a bit after
-Gridset. It's VERY basic and probably shouldn't be used on
-your client projects. The idea is you learn how to roll your
-own grids. It's better in the long run and allows you full control
-over your project's layout.
-
-******************************************************************/
-/* line 35, ../../scss/partials/_grid.scss */
-.last-col {
-  float: right;
-  padding-right: 0 !important;
-}
-
-/*
-Mobile Grid Styles
-These are the widths for the mobile grid.
-There are four types, but you can add or customize
-them however you see fit.
-*/
-@media (max-width: 767px) {
-  /* line 49, ../../scss/partials/_grid.scss */
-  .m-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0;
-  }
-
-  /* line 55, ../../scss/partials/_grid.scss */
-  .m-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%;
-  }
-
-  /* line 60, ../../scss/partials/_grid.scss */
-  .m-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%;
-  }
-
-  /* line 65, ../../scss/partials/_grid.scss */
-  .m-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%;
-  }
-
-  /* line 70, ../../scss/partials/_grid.scss */
-  .m-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%;
-  }
-
-  /* line 75, ../../scss/partials/_grid.scss */
-  .m-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%;
-  }
-}
-/* Portrait tablet to landscape */
-@media (min-width: 768px) and (max-width: 1029px) {
-  /* line 86, ../../scss/partials/_grid.scss */
-  .t-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0;
-  }
-
-  /* line 92, ../../scss/partials/_grid.scss */
-  .t-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%;
-  }
-
-  /* line 97, ../../scss/partials/_grid.scss */
-  .t-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%;
-  }
-
-  /* line 102, ../../scss/partials/_grid.scss */
-  .t-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%;
-  }
-
-  /* line 107, ../../scss/partials/_grid.scss */
-  .t-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%;
-  }
-
-  /* line 112, ../../scss/partials/_grid.scss */
-  .t-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%;
-  }
-
-  /* line 117, ../../scss/partials/_grid.scss */
-  .t-1of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 20%;
-  }
-
-  /* line 122, ../../scss/partials/_grid.scss */
-  .t-2of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 40%;
-  }
-
-  /* line 127, ../../scss/partials/_grid.scss */
-  .t-3of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 60%;
-  }
-
-  /* line 132, ../../scss/partials/_grid.scss */
-  .t-4of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 80%;
-  }
-}
-/* Landscape to small desktop */
-@media (min-width: 1030px) {
-  /* line 142, ../../scss/partials/_grid.scss */
-  .d-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0;
-  }
-
-  /* line 148, ../../scss/partials/_grid.scss */
-  .d-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%;
-  }
-
-  /* line 153, ../../scss/partials/_grid.scss */
-  .d-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%;
-  }
-
-  /* line 158, ../../scss/partials/_grid.scss */
-  .d-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%;
-  }
-
-  /* line 163, ../../scss/partials/_grid.scss */
-  .d-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%;
-  }
-
-  /* line 168, ../../scss/partials/_grid.scss */
-  .d-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%;
-  }
-
-  /* line 173, ../../scss/partials/_grid.scss */
-  .d-1of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 20%;
-  }
-
-  /* line 178, ../../scss/partials/_grid.scss */
-  .d-2of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 40%;
-  }
-
-  /* line 183, ../../scss/partials/_grid.scss */
-  .d-3of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 60%;
-  }
-
-  /* line 188, ../../scss/partials/_grid.scss */
-  .d-4of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 80%;
-  }
-
-  /* line 193, ../../scss/partials/_grid.scss */
-  .d-1of6 {
-    float: left;
-    padding-right: 0.75em;
-    width: 16.6666666667%;
-  }
-
-  /* line 198, ../../scss/partials/_grid.scss */
-  .d-1of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 14.2857142857%;
-  }
-
-  /* line 203, ../../scss/partials/_grid.scss */
-  .d-2of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 28.5714286%;
-  }
-
-  /* line 208, ../../scss/partials/_grid.scss */
-  .d-3of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 42.8571429%;
-  }
-
-  /* line 213, ../../scss/partials/_grid.scss */
-  .d-4of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 57.1428572%;
-  }
-
-  /* line 218, ../../scss/partials/_grid.scss */
-  .d-5of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 71.4285715%;
-  }
-
-  /* line 223, ../../scss/partials/_grid.scss */
-  .d-6of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 85.7142857%;
-  }
-
-  /* line 228, ../../scss/partials/_grid.scss */
-  .d-1of8 {
-    float: left;
-    padding-right: 0.75em;
-    width: 12.5%;
-  }
-
-  /* line 233, ../../scss/partials/_grid.scss */
-  .d-1of9 {
-    float: left;
-    padding-right: 0.75em;
-    width: 11.1111111111%;
-  }
-
-  /* line 238, ../../scss/partials/_grid.scss */
-  .d-1of10 {
-    float: left;
-    padding-right: 0.75em;
-    width: 10%;
-  }
-
-  /* line 243, ../../scss/partials/_grid.scss */
-  .d-1of11 {
-    float: left;
-    padding-right: 0.75em;
-    width: 9.09090909091%;
-  }
-
-  /* line 248, ../../scss/partials/_grid.scss */
-  .d-1of12 {
-    float: left;
-    padding-right: 0.75em;
-    width: 8.33%;
-  }
-}
-/******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Alert Styles
 
 If you want to use these alerts in your design, you can. If not,
@@ -1059,26 +748,27 @@ Site Name: Topline Roofing & Wall Services
 
 ******************************************************************/
 /* line 8, ../../scss/modules/_buttons.scss */
-.blue-btn, .comment-reply-link, #submit, .green-btn {
+.blue-btn, .green-btn, .clear-btn, .clear-green-btn {
   display: inline-block;
   position: relative;
-  font-family: 'futura';
+  font-family: "futura", "futura", "Futura PT", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
+  text-transform: uppercase;
   color: #fff;
+  font-size: 1.1em;
   line-height: 34px;
-  border-radius: 3px;
+  border-radius: 5px;
   border: 0;
   cursor: pointer;
   transition: background-color 0.14s ease-in-out;
 }
-/* line 21, ../../scss/modules/_buttons.scss */
-.blue-btn:hover, .comment-reply-link:hover, #submit:hover, .green-btn:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, .green-btn:focus {
-  background-color: #74ae26;
+/* line 23, ../../scss/modules/_buttons.scss */
+.blue-btn:hover, .green-btn:hover, .clear-btn:hover, .clear-green-btn:hover, .blue-btn:focus, .green-btn:focus, .clear-btn:focus, .clear-green-btn:focus {
   text-decoration: none;
   outline: none;
 }
-/* line 28, ../../scss/modules/_buttons.scss */
-.blue-btn:active, .comment-reply-link:active, #submit:active, .green-btn:active {
+/* line 29, ../../scss/modules/_buttons.scss */
+.blue-btn:active, .green-btn:active, .clear-btn:active, .clear-green-btn:active {
   top: 1px;
 }
 
@@ -1087,26 +777,74 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-/* line 39, ../../scss/modules/_buttons.scss */
-.blue-btn, .comment-reply-link, #submit {
+/* line 40, ../../scss/modules/_buttons.scss */
+.blue-btn {
   background-color: #2980b9;
 }
-/* line 43, ../../scss/modules/_buttons.scss */
-.blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+/* line 44, ../../scss/modules/_buttons.scss */
+.blue-btn:hover, .blue-btn:focus {
   background-color: #2574a8;
 }
-/* line 48, ../../scss/modules/_buttons.scss */
-.blue-btn:active, .comment-reply-link:active, #submit:active {
+/* line 49, ../../scss/modules/_buttons.scss */
+.blue-btn:active {
   background-color: #2472a4;
 }
 
-/* line 54, ../../scss/modules/_buttons.scss */
+/* line 55, ../../scss/modules/_buttons.scss */
 .green-btn {
-  background-color: #85C72C;
-  text-transform: uppercase;
+  background-color: #00B57D;
   box-shadow: 0px 2px 0 #113A0E;
   padding: 10px 20px;
-  font-size: 0.56em;
+  transition: all 0.35s ease;
+}
+/* line 62, ../../scss/modules/_buttons.scss */
+.green-btn:hover, .green-btn:focus {
+  background-color: #009668;
+}
+
+/* line 67, ../../scss/modules/_buttons.scss */
+.clear-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 25px;
+  border: 2.3px solid white;
+  font-weight: bolder;
+  overflow: hidden;
+  height: 2.8em;
+  position: relative;
+  transition: all 0.35s ease;
+}
+/* line 78, ../../scss/modules/_buttons.scss */
+.clear-btn:hover {
+  line-height: 8em;
+}
+/* line 81, ../../scss/modules/_buttons.scss */
+.clear-btn:hover:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -2.75em;
+}
+
+/* line 89, ../../scss/modules/_buttons.scss */
+.clear-green-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 4px 25px;
+  border: 2.3px solid #00B57D;
+  font-weight: bolder;
+  color: #00B57D;
+  overflow: hidden;
+  height: 2.75em;
+  position: relative;
+  transition: all 0.35s ease;
+}
+/* line 101, ../../scss/modules/_buttons.scss */
+.clear-green-btn:hover {
+  line-height: 8em;
+}
+/* line 104, ../../scss/modules/_buttons.scss */
+.clear-green-btn:hover:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -2.75em;
 }
 
 /******************************************************************
@@ -1160,7 +898,7 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "futura", "Futura PT", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #E4E9DF;
   transition: background-color 0.24s ease-in-out;
 }
@@ -1413,796 +1151,60 @@ select {
   background-position: 97.5% center;
 }
 
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Base Mobile Stylesheet
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
-
-******************************************************************/
-/*********************
-GENERAL STYLES
-*********************/
-/* line 19, ../../scss/breakpoints/_base.scss */
-body {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  color: #5c6b80;
-  background-color: #E4E9DF;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* line 12, ../../../../../../../../../.rvm/gems/ruby-2.1.5/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
-body:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-/*********************
-HOMEPAGE
-*********************/
-/* line 34, ../../scss/breakpoints/_base.scss */
-.banner {
-  background-image: url("/Topline/wp-content/uploads/2015/05/banner-mobile.png");
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 0.2px;
-  padding-bottom: 15px;
-  font-family: "futura-pt",sans-serif;
-  color: white;
-  font-size: 1.7em;
-  font-weight: bolder;
-}
-/* line 45, ../../scss/breakpoints/_base.scss */
-.banner .banner-text {
-  font-family: "chaparral-pro";
-  color: #80DC1D;
-  font-size: 0.7em;
-  font-weight: normal;
-}
-
-/* line 55, ../../scss/breakpoints/_base.scss */
-.services {
-  background-color: #B2CE80;
-  font-size: 1.3em;
-  padding: 30px;
-  overflow: auto;
-  height: auto !important;
-}
-/* line 64, ../../scss/breakpoints/_base.scss */
-.services .service-block {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: #F3F2F3;
-  box-shadow: 0px 2px 0px #676868;
-  margin: 20px 0;
-}
-/* line 73, ../../scss/breakpoints/_base.scss */
-.services .service-block .feat-img {
-  width: 48.57143%;
-  float: left;
-  margin-right: 2.85714%;
-  display: none;
-}
-@media (min-width: 620px) {
-  /* line 73, ../../scss/breakpoints/_base.scss */
-  .services .service-block .feat-img {
-    display: inline;
-  }
-}
-@media (min-width: 620px) {
-  /* line 83, ../../scss/breakpoints/_base.scss */
-  .services .service-block .service-list {
-    width: 48.57143%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 88, ../../scss/breakpoints/_base.scss */
-.services .service-block .service-list h4 {
-  text-align: center;
-  text-transform: uppercase;
-  color: #002654;
-}
-/* line 95, ../../scss/breakpoints/_base.scss */
-.services .service-block .service-list ul li {
-  font-family: "chaparral-pro";
-  color: #616161;
-  margin: 5% 3%;
-  border-bottom: 4px solid #F3F2F3;
-  cursor: pointer;
-}
-/* line 101, ../../scss/breakpoints/_base.scss */
-.services .service-block .service-list ul li:hover > span {
-  border-bottom: 4px solid #777777;
-}
-/* line 105, ../../scss/breakpoints/_base.scss */
-.services .service-block .service-list ul li img {
-  margin: -2px 5px;
-}
-@media (min-width: 1230px) {
-  /* line 114, ../../scss/breakpoints/_base.scss */
-  .services .service-block-1 {
-    width: 48.57143%;
-    float: left;
-    margin-right: 2.85714%;
-  }
-}
-@media (min-width: 1230px) {
-  /* line 119, ../../scss/breakpoints/_base.scss */
-  .services .service-block-2 {
-    width: 48.57143%;
-    float: right;
-    margin-right: 0;
-    float: right;
-    margin-right: 0;
-  }
-}
-
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-/* for sites that are read right to left (i.e. hebrew) */
-/* home page */
-/* blog template page */
-/* archive page */
-/* date archive page */
-/* replace the number to the corresponding page number */
-/* search page */
-/* search result page */
-/* no results search page */
-/* individual paged search (i.e. body.search-paged-3) */
-/* 404 page */
-/* single post page */
-/* individual post page by id (i.e. body.postid-73) */
-/* individual paged single (i.e. body.single-paged-3) */
-/* attatchment page */
-/* individual attatchment page (i.e. body.attachmentid-763) */
-/* style mime type pages */
-/* author page */
-/* user nicename (i.e. body.author-samueladams) */
-/* paged author archives (i.e. body.author-paged-4) for page 4 */
-/* category page */
-/* individual category page (i.e. body.category-6) */
-/* replace the number to the corresponding page number */
-/* tag page */
-/* individual tag page (i.e. body.tag-news) */
-/* replace the number to the corresponding page number */
-/* custom page template page */
-/* individual page template (i.e. body.page-template-contact-php */
-/* replace the number to the corresponding page number */
-/* parent page template */
-/* child page template */
-/* replace the number to the corresponding page number */
-/* if user is logged in */
-/* paged items like search results or archives */
-/* individual paged (i.e. body.paged-3) */
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-/* line 175, ../../scss/breakpoints/_base.scss */
-.wrap {
-  width: 96%;
-  margin: 0 auto;
-}
-
-/*********************
-LINK STYLES
-*********************/
-/* line 184, ../../scss/breakpoints/_base.scss */
-a, a:visited {
-  color: #2980b9;
-  /* on hover */
-  /* on click */
-  /* mobile tap color */
-}
-/* line 198, ../../scss/breakpoints/_base.scss */
-a:link, a:visited:link {
-  /*
-  this highlights links on iPhones/iPads.
-  so it basically works like the :hover selector
-  for mobile devices.
-  */
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
-}
-
-/******************************************************************
-H1, H2, H3, H4, H5 STYLES
-******************************************************************/
-/* line 212, ../../scss/breakpoints/_base.scss */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  text-rendering: optimizelegibility;
-  font-weight: 500;
-  /*
-  if you're going to use webfonts, be sure to check your weights
-  http://css-tricks.com/watch-your-font-weight/
-  */
-  /* removing text decoration from all headline links */
-}
-/* line 221, ../../scss/breakpoints/_base.scss */
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
-  text-decoration: none;
-}
-
-/* line 226, ../../scss/breakpoints/_base.scss */
-h1, .h1 {
-  font-size: 2.5em;
-  line-height: 1.333em;
-}
-
-/* line 231, ../../scss/breakpoints/_base.scss */
-h2, .h2 {
-  font-size: 1.75em;
-  line-height: 1.4em;
-  margin-bottom: 0.375em;
-}
-
-/* line 237, ../../scss/breakpoints/_base.scss */
-h3, .h3 {
-  font-size: 1.125em;
-}
-
-/* line 241, ../../scss/breakpoints/_base.scss */
-h4, .h4 {
-  font-size: 1.1em;
-  font-weight: 700;
-}
-
-/* line 246, ../../scss/breakpoints/_base.scss */
-h5, .h5 {
-  font-size: 0.846em;
-  line-height: 2.09em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/*********************
-HEADER STYLES
-*********************/
-/* line 257, ../../scss/breakpoints/_base.scss */
-.header {
-  background-color: #fff;
-  text-align: center;
-}
-
-/* line 262, ../../scss/breakpoints/_base.scss */
-#logo {
-  margin: 0.75em auto;
-}
-
-/*********************
-NAVIGATION STYLES
-*********************/
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
-/* line 279, ../../scss/breakpoints/_base.scss */
-.nav {
-  border-bottom: 0;
-  /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */
-}
-/* line 282, ../../scss/breakpoints/_base.scss */
-.nav li {
-  /*
-  so you really have to rethink your dropdowns for mobile.
-  you don't want to have it expand too much because the
-  screen is so small. How you manage your menu should
-  depend on the project. Here's some great info on it:
-  http://www.alistapart.com/articles/organizing-mobile/
-  */
-}
-/* line 284, ../../scss/breakpoints/_base.scss */
-.nav li a {
-  display: block;
-  color: #002654;
-  text-decoration: none;
-  padding: 0.75em;
-  text-transform: uppercase;
-  font-weight: bolder;
-  /*
-  remember this is for mobile ONLY, so there's no need
-  to even declare hover styles here, you can do it in
-  the style.scss file where it's relevant. We want to
-  keep this file as small as possible!
-  */
-}
-/* line 319, ../../scss/breakpoints/_base.scss */
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
-  padding-left: 30px;
-}
-
-/* end .nav */
-/* line 351, ../../scss/breakpoints/_base.scss */
-nav ul, nav ol {
-  list-style: none;
-  list-style-image: none;
-  margin: 0 auto !important;
-  width: 621px !important;
-}
-
-/*********************
-POSTS & CONTENT STYLES
-*********************/
-/* line 363, ../../scss/breakpoints/_base.scss */
-.hentry {
-  background-color: #fff;
-  border-radius: 3px;
-  margin-bottom: 1.5em;
-  border: 1px solid #ccc;
-}
-/* line 369, ../../scss/breakpoints/_base.scss */
-.hentry header {
-  border-bottom: 1px solid #f8f9fa;
-  padding: 1.5em;
-}
-/* line 374, ../../scss/breakpoints/_base.scss */
-.hentry footer {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
-}
-/* line 378, ../../scss/breakpoints/_base.scss */
-.hentry footer p {
-  margin: 0;
-}
-
-/* end .hentry */
-/* line 385, ../../scss/breakpoints/_base.scss */
-.single-title,
-.page-title,
-.entry-title {
-  margin: 0;
-}
-
-/* want to style individual post classes? Booya! */
-/* post by id (i.e. post-3) */
-/* general post style */
-/* general article on a page style */
-/* general style on an attatchment */
-/* sticky post style */
-/* hentry class */
-/* style by category (i.e. category-videos) */
-/* style by tag (i.e. tag-news) */
-/* post meta */
-/* line 410, ../../scss/breakpoints/_base.scss */
-.byline {
-  color: #9fa6b4;
-  font-style: italic;
-  margin: 0;
-}
-
-/* entry content */
-/* line 419, ../../scss/breakpoints/_base.scss */
-.entry-content {
-  padding: 1.5em 1.5em 0;
-  /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */
-}
-/* line 422, ../../scss/breakpoints/_base.scss */
-.entry-content p {
-  margin: 0 0 1.5em;
-}
-/* line 447, ../../scss/breakpoints/_base.scss */
-.entry-content table {
-  width: 100%;
-  border: 1px solid #E4E9DF;
-  margin-bottom: 1.5em;
-}
-/* line 452, ../../scss/breakpoints/_base.scss */
-.entry-content table caption {
-  margin: 0 0 7px;
-  font-size: 0.75em;
-  color: #9fa6b4;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-/* line 461, ../../scss/breakpoints/_base.scss */
-.entry-content tr {
-  border-bottom: 1px solid #E4E9DF;
-}
-/* line 464, ../../scss/breakpoints/_base.scss */
-.entry-content tr:nth-child(even) {
-  background-color: #f8f9fa;
-}
-/* line 469, ../../scss/breakpoints/_base.scss */
-.entry-content td {
-  padding: 7px;
-  border-right: 1px solid #E4E9DF;
-}
-/* line 473, ../../scss/breakpoints/_base.scss */
-.entry-content td:last-child {
-  border-right: 0;
-}
-/* line 478, ../../scss/breakpoints/_base.scss */
-.entry-content th {
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #E4E9DF;
-  border-right: 1px solid #E4E9DF;
-}
-/* line 483, ../../scss/breakpoints/_base.scss */
-.entry-content th:last-child {
-  border-right: 0;
-}
-/* line 488, ../../scss/breakpoints/_base.scss */
-.entry-content blockquote {
-  margin: 0 0 1.5em 0.75em;
-  padding: 0 0 0 0.75em;
-  border-left: 3px solid #2980b9;
-  font-style: italic;
-  color: #9fa6b4;
-}
-/* line 503, ../../scss/breakpoints/_base.scss */
-.entry-content dd {
-  margin-left: 0;
-  font-size: 0.9em;
-  color: #787878;
-  margin-bottom: 1.5em;
-}
-/* line 510, ../../scss/breakpoints/_base.scss */
-.entry-content img {
-  margin: 0 0 1.5em 0;
-  max-width: 100%;
-  height: auto;
-}
-/* line 526, ../../scss/breakpoints/_base.scss */
-.entry-content .size-auto,
-.entry-content .size-full,
-.entry-content .size-large,
-.entry-content .size-medium,
-.entry-content .size-thumbnail {
-  max-width: 100%;
-  height: auto;
-}
-/* line 535, ../../scss/breakpoints/_base.scss */
-.entry-content pre {
-  background: #323944;
-  color: #f8f9fa;
-  font-size: 0.9em;
-  padding: 1.5em;
-  margin: 0 0 1.5em;
-  border-radius: 3px;
-}
-
-/* end .entry-content */
-/* line 546, ../../scss/breakpoints/_base.scss */
-.wp-caption {
-  max-width: 100%;
-  background: #eee;
-  padding: 5px;
-  /* images inside wp-caption */
-}
-/* line 552, ../../scss/breakpoints/_base.scss */
-.wp-caption img {
-  max-width: 100%;
-  margin-bottom: 0;
-  width: 100%;
-}
-/* line 558, ../../scss/breakpoints/_base.scss */
-.wp-caption p.wp-caption-text {
-  font-size: 0.85em;
-  margin: 4px 0 7px;
-  text-align: center;
-}
-
-/* end .wp-caption */
-/* image gallery styles */
-/* end .gallery */
-/* gallery caption styles */
-/* line 592, ../../scss/breakpoints/_base.scss */
-.tags {
-  margin: 0;
-}
-
-/******************************************************************
-PAGE NAVI STYLES
-******************************************************************/
-/* line 600, ../../scss/breakpoints/_base.scss */
-.pagination,
-.wp-prev-next {
-  margin: 1.5em 0;
-}
-
-/* line 604, ../../scss/breakpoints/_base.scss */
-.pagination {
-  text-align: center;
-}
-/* line 607, ../../scss/breakpoints/_base.scss */
-.pagination ul {
-  display: inline-block;
-  background-color: #fff;
-  white-space: nowrap;
-  padding: 0;
-  clear: both;
-  border-radius: 3px;
-}
-/* line 616, ../../scss/breakpoints/_base.scss */
-.pagination li {
-  padding: 0;
-  margin: 0;
-  float: left;
-  display: inline;
-  overflow: hidden;
-  border-right: 1px solid #E4E9DF;
-}
-/* line 625, ../../scss/breakpoints/_base.scss */
-.pagination a, .pagination span {
-  margin: 0;
-  text-decoration: none;
-  padding: 0;
-  line-height: 1em;
-  font-size: 1em;
-  font-weight: normal;
-  padding: 0.75em;
-  min-width: 1em;
-  display: block;
-  color: #2980b9;
-}
-/* line 637, ../../scss/breakpoints/_base.scss */
-.pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-  background-color: #2980b9;
-  color: #fff;
-}
-/* line 643, ../../scss/breakpoints/_base.scss */
-.pagination .current {
-  cursor: default;
-  color: #5c6b80;
-}
-/* line 647, ../../scss/breakpoints/_base.scss */
-.pagination .current:hover, .pagination .current:focus {
-  background-color: #fff;
-  color: #5c6b80;
-}
-
-/* end .bones_page_navi */
-/* fallback previous & next links */
-/* line 660, ../../scss/breakpoints/_base.scss */
-.wp-prev-next .prev-link {
-  float: left;
-}
-/* line 664, ../../scss/breakpoints/_base.scss */
-.wp-prev-next .next-link {
-  float: right;
-}
-
-/* end .wp-prev-next */
-/******************************************************************
-COMMENT STYLES
-******************************************************************/
-/* h3 comment title */
-/* line 675, ../../scss/breakpoints/_base.scss */
-#comments-title {
-  padding: 0.75em;
-  margin: 0;
-  border-top: 1px solid #f8f9fa;
-  /* number of comments span */
-}
-
-/* line 695, ../../scss/breakpoints/_base.scss */
-.commentlist {
-  margin: 0;
-  list-style-type: none;
-}
-
-/* line 700, ../../scss/breakpoints/_base.scss */
-.comment {
-  position: relative;
-  clear: both;
-  overflow: hidden;
-  padding: 1.5em;
-  border-bottom: 1px solid #f8f9fa;
-  /* vcard */
-  /* end .commentlist .vcard */
-  /* end children */
-  /* general comment classes */
-}
-/* line 707, ../../scss/breakpoints/_base.scss */
-.comment .comment-author {
-  padding: 7px;
-  border: 0;
-}
-/* line 713, ../../scss/breakpoints/_base.scss */
-.comment .vcard {
-  margin-left: 50px;
-}
-/* line 716, ../../scss/breakpoints/_base.scss */
-.comment .vcard cite.fn {
-  font-weight: 700;
-  font-style: normal;
-}
-/* line 724, ../../scss/breakpoints/_base.scss */
-.comment .vcard time {
-  display: block;
-  font-size: 0.9em;
-  font-style: italic;
-}
-/* line 729, ../../scss/breakpoints/_base.scss */
-.comment .vcard time a {
-  color: #9fa6b4;
-  text-decoration: none;
-}
-/* line 733, ../../scss/breakpoints/_base.scss */
-.comment .vcard time a:hover {
-  text-decoration: underline;
-}
-/* line 743, ../../scss/breakpoints/_base.scss */
-.comment .vcard .avatar {
-  position: absolute;
-  left: 16px;
-  border-radius: 50%;
-}
-/* line 751, ../../scss/breakpoints/_base.scss */
-.comment:last-child {
-  margin-bottom: 0;
-}
-/* line 755, ../../scss/breakpoints/_base.scss */
-.comment .children {
-  margin: 0;
-  /* variations */
-  /* change number for different depth */
-}
-/* line 773, ../../scss/breakpoints/_base.scss */
-.comment[class*=depth-] {
-  margin-top: 1.1em;
-}
-/* line 777, ../../scss/breakpoints/_base.scss */
-.comment.depth-1 {
-  margin-left: 0;
-  margin-top: 0;
-}
-/* line 782, ../../scss/breakpoints/_base.scss */
-.comment:not(.depth-1) {
-  margin-top: 0;
-  margin-left: 7px;
-  padding: 7px;
-}
-/* line 795, ../../scss/breakpoints/_base.scss */
-.comment.odd {
-  background-color: #fff;
-}
-/* line 798, ../../scss/breakpoints/_base.scss */
-.comment.even {
-  background: #f8f9fa;
-}
-
-/* comment meta */
-/* comment content */
-/* line 832, ../../scss/breakpoints/_base.scss */
-.comment_content p {
-  margin: 0.7335em 0 1.5em;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-
-/* end .commentlist .comment_content */
-/* comment reply link */
-/* line 841, ../../scss/breakpoints/_base.scss */
-.comment-reply-link {
-  font-size: 0.9em;
-  float: right;
-}
-
-/* end .commentlist .comment-reply-link */
-/* edit comment link */
-/* line 853, ../../scss/breakpoints/_base.scss */
-.comment-edit-link {
-  font-style: italic;
-  margin: 0 7px;
-  text-decoration: none;
-  font-size: 0.9em;
-}
-
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-/* line 866, ../../scss/breakpoints/_base.scss */
-.comment-respond {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
-}
-
-/* line 872, ../../scss/breakpoints/_base.scss */
-#reply-title {
-  margin: 0;
-}
-
-/* line 876, ../../scss/breakpoints/_base.scss */
-.logged-in-as {
-  color: #9fa6b4;
-  font-style: italic;
-  margin: 0;
-}
-/* line 881, ../../scss/breakpoints/_base.scss */
-.logged-in-as a {
-  color: #5c6b80;
-}
-
-/* line 886, ../../scss/breakpoints/_base.scss */
-.comment-form-comment {
-  margin: 1.5em 0 0.75em;
-}
-
-/* line 890, ../../scss/breakpoints/_base.scss */
-.form-allowed-tags {
-  padding: 1.5em;
-  background-color: #f8f9fa;
-  font-size: 0.9em;
-}
-
-/* comment submit button */
-/* line 897, ../../scss/breakpoints/_base.scss */
-#submit {
-  float: right;
-  font-size: 1em;
-}
-
-/* comment form title */
-/* line 904, ../../scss/breakpoints/_base.scss */
-#comment-form-title {
-  margin: 0 0 1.1em;
-}
-
-/* cancel comment reply link */
-/* logged in comments */
-/* allowed tags */
-/* line 917, ../../scss/breakpoints/_base.scss */
-#allowed_tags {
-  margin: 1.5em 10px 0.7335em 0;
-}
-
-/* no comments */
-/* line 922, ../../scss/breakpoints/_base.scss */
-.nocomments {
-  margin: 0 20px 1.1em;
-}
-
-/*********************
-SIDEBARS & ASIDES
-*********************/
-/* line 938, ../../scss/breakpoints/_base.scss */
-.widget ul li {
-  /* deep nesting */
-}
-
-/* line 955, ../../scss/breakpoints/_base.scss */
-.no-widgets {
-  background-color: #fff;
-  padding: 1.5em;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  margin-bottom: 1.5em;
-}
-
-/*********************
-FOOTER STYLES
-*********************/
-/* line 968, ../../scss/breakpoints/_base.scss */
+/* line 1, ../../scss/breakpoints/_footer.scss */
 .footer {
   clear: both;
   background-color: #002654;
   color: #f8f9fa;
+  font-family: "chaparral-pro", "chaparral-pro", "Georgia", Cambria, Times New Roman, Times, serif;
+}
+/* line 8, ../../scss/breakpoints/_footer.scss */
+.footer .footer-image {
+  background: url("/wp-content/themes/topline/library/images/pano-vic.png") no-repeat center center;
+  height: 388px;
+}
+/* line 14, ../../scss/breakpoints/_footer.scss */
+.footer .footer-links ul li {
+  margin: 5px 0;
+  transition: all 0.2s ease;
+}
+/* line 18, ../../scss/breakpoints/_footer.scss */
+.footer .footer-links ul li:hover {
+  -webkit-transform: translateX(3px);
+  -ms-transform: translateX(3px);
+  transform: translateX(3px);
+}
+
+/* line 25, ../../scss/breakpoints/_footer.scss */
+.bottom-footer {
+  background-color: #00B57D;
+  font-family: "chaparral-pro", "chaparral-pro", "Georgia", Cambria, Times New Roman, Times, serif;
+  padding: 10px 15px;
+  height: 40px;
+}
+@media (min-width: 827px) {
+  /* line 25, ../../scss/breakpoints/_footer.scss */
+  .bottom-footer {
+    padding: 10px 270px;
+  }
+}
+/* line 36, ../../scss/breakpoints/_footer.scss */
+.bottom-footer p {
+  margin: 0px;
+  color: #fff;
+}
+/* line 40, ../../scss/breakpoints/_footer.scss */
+.bottom-footer .copyright {
+  float: left;
+}
+/* line 44, ../../scss/breakpoints/_footer.scss */
+.bottom-footer .branding {
+  float: right;
+}
+/* line 46, ../../scss/breakpoints/_footer.scss */
+.bottom-footer .branding a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /*
@@ -2215,6 +1217,684 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+/* line 70, ../../scss/breakpoints/_footer.scss */
+.footer-nav {
+  border: none;
+  margin: 20px 0 !important;
+}
+/* line 74, ../../scss/breakpoints/_footer.scss */
+.footer-nav a {
+  color: white;
+  float: none;
+  border: none;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+/******************************************************************
+Site Name: Topline
+Author: North Studio
+
+Stylesheet: Base Mobile Stylesheet
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+/* line 14, ../../scss/breakpoints/_base.scss */
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "futura-pt", "futura", "Futura PT", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: #5c6b80;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all .2s linear;
+}
+/* line 12, ../../../../../../../../../.rvm/gems/ruby-2.1.5/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 25, ../../scss/breakpoints/_base.scss */
+#content {
+  padding: 30px;
+}
+@media (min-width: 640px) {
+  /* line 25, ../../scss/breakpoints/_base.scss */
+  #content {
+    padding: 60px;
+  }
+}
+
+/* line 32, ../../scss/breakpoints/_base.scss */
+::-moz-selection {
+  background: #00B57D;
+  /* WebKit/Blink Browsers */
+  color: white;
+}
+::selection {
+  background: #00B57D;
+  /* WebKit/Blink Browsers */
+  color: white;
+}
+
+/* line 39, ../../scss/breakpoints/_base.scss */
+::-moz-selection {
+  background: #00B57D;
+  /* Gecko Browsers */
+  color: white;
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+/* line 48, ../../scss/breakpoints/_base.scss */
+.wrap {
+  width: 96%;
+  margin: 0 auto;
+}
+
+/*********************
+LINK STYLES
+*********************/
+/* line 57, ../../scss/breakpoints/_base.scss */
+a, a:visited {
+  color: #fff;
+  /* on hover */
+  /* on click */
+  /* mobile tap color */
+}
+/* line 71, ../../scss/breakpoints/_base.scss */
+a:link, a:visited:link {
+  /*
+  this highlights links on iPhones/iPads.
+  so it basically works like the :hover selector
+  for mobile devices.
+  */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+/* line 85, ../../scss/breakpoints/_base.scss */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  text-rendering: optimizelegibility;
+  font-weight: 500;
+  font-family: "futura", "futura", "Futura PT", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 90, ../../scss/breakpoints/_base.scss */
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+  text-decoration: none;
+}
+
+/* line 95, ../../scss/breakpoints/_base.scss */
+h1, .h1 {
+  font-size: 1.8em;
+  line-height: 1.333em;
+}
+
+/* line 100, ../../scss/breakpoints/_base.scss */
+h2, .h2 {
+  font-size: 1.65em;
+  line-height: 1.4em;
+}
+
+/* line 105, ../../scss/breakpoints/_base.scss */
+h3, .h3 {
+  font-size: 1.5em;
+  color: #00B57D;
+  text-transform: uppercase;
+}
+
+/* line 111, ../../scss/breakpoints/_base.scss */
+h4, .h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+/* line 116, ../../scss/breakpoints/_base.scss */
+h5, .h5 {
+  font-size: 0.846em;
+  line-height: 2.09em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* line 123, ../../scss/breakpoints/_base.scss */
+p {
+  font-family: "chaparral-pro", "chaparral-pro", "Georgia", Cambria, Times New Roman, Times, serif;
+  color: #878787;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+/* line 132, ../../scss/breakpoints/_base.scss */
+.header {
+  background-color: #fff;
+  text-align: center;
+}
+/* line 136, ../../scss/breakpoints/_base.scss */
+.header #logo {
+  margin: 0.75em auto;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+/* line 148, ../../scss/breakpoints/_base.scss */
+.top-nav {
+  border: 0;
+}
+/* line 151, ../../scss/breakpoints/_base.scss */
+.top-nav ul {
+  margin-top: 0;
+}
+/* line 154, ../../scss/breakpoints/_base.scss */
+.top-nav li {
+  float: left;
+  position: relative;
+}
+/* line 158, ../../scss/breakpoints/_base.scss */
+.top-nav li a {
+  border-bottom: 4px solid #fff;
+  display: block;
+  color: #002654;
+  text-decoration: none;
+  padding: 0.75em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  /*
+  you can use hover styles here even though this size
+  has the possibility of being a mobile device.
+  */
+}
+/* line 171, ../../scss/breakpoints/_base.scss */
+.top-nav li a:hover, .top-nav li a:focus {
+  border-bottom: 4px solid #002654;
+}
+
+/* line 178, ../../scss/breakpoints/_base.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0 auto !important;
+  display: table;
+}
+
+/*********************
+HOMEPAGE STYLES
+*********************/
+/* line 189, ../../scss/breakpoints/_base.scss */
+.banner {
+  background-image: url("/wp-content/themes/topline/library/images/banner-mobile.png");
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.2px;
+  padding-bottom: 15px;
+  font-family: "futura", "Futura PT", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 1.7em;
+  font-weight: bolder;
+}
+/* line 199, ../../scss/breakpoints/_base.scss */
+.banner .banner-text {
+  font-family: "chaparral-pro", "Georgia", Cambria, Times New Roman, Times, serif;
+  color: #00EA9C;
+  font-size: 0.7em;
+  font-weight: normal;
+}
+/* line 205, ../../scss/breakpoints/_base.scss */
+.banner p {
+  font-family: "futura", "Futura PT", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+/* line 210, ../../scss/breakpoints/_base.scss */
+.banner .green-btn {
+  font-size: 0.8em;
+  padding: 20px;
+}
+
+/* line 216, ../../scss/breakpoints/_base.scss */
+#services {
+  background-color: #B6D8CA;
+  font-size: 1.3em;
+  padding: 30px;
+  overflow: auto;
+  height: auto !important;
+}
+/* line 224, ../../scss/breakpoints/_base.scss */
+#services .service-block {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #F3F2F3;
+  box-shadow: 0px 2px 0px #676868;
+  margin: 20px 0;
+  height: auto;
+}
+/* line 232, ../../scss/breakpoints/_base.scss */
+#services .service-block .image-container {
+  width: 48.57143%;
+  float: left;
+  margin-right: 2.85714%;
+  display: none;
+  height: 0;
+  padding: 0;
+  padding-bottom: 60%;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 620px) {
+  /* line 232, ../../scss/breakpoints/_base.scss */
+  #services .service-block .image-container {
+    display: inline;
+  }
+}
+@media (min-width: 620px) {
+  /* line 248, ../../scss/breakpoints/_base.scss */
+  #services .service-block .service-list {
+    width: 48.57143%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 248, ../../scss/breakpoints/_base.scss */
+  #services .service-block .service-list {
+    font-size: 1.2em;
+  }
+}
+/* line 256, ../../scss/breakpoints/_base.scss */
+#services .service-block .service-list h4 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #002654;
+}
+/* line 263, ../../scss/breakpoints/_base.scss */
+#services .service-block .service-list ul li {
+  margin: 5% 3%;
+}
+/* line 265, ../../scss/breakpoints/_base.scss */
+#services .service-block .service-list ul li a {
+  font-family: "chaparral-pro";
+  color: #878787;
+  border-bottom: 4px solid #F3F2F3;
+  text-decoration: none;
+}
+/* line 270, ../../scss/breakpoints/_base.scss */
+#services .service-block .service-list ul li a:hover > span {
+  border-bottom: 4px solid #777777;
+}
+/* line 274, ../../scss/breakpoints/_base.scss */
+#services .service-block .service-list ul li a img {
+  margin: -2px 5px;
+}
+@media (min-width: 1230px) {
+  /* line 284, ../../scss/breakpoints/_base.scss */
+  #services .service-block-1 {
+    width: 48.57143%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+}
+/* line 288, ../../scss/breakpoints/_base.scss */
+#services .service-block-1 .image-container {
+  background-image: url("/wp-content/themes/topline/library/images/wallservice.png");
+}
+@media (min-width: 1230px) {
+  /* line 292, ../../scss/breakpoints/_base.scss */
+  #services .service-block-2 {
+    width: 48.57143%;
+    float: right;
+    margin-right: 0;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 297, ../../scss/breakpoints/_base.scss */
+#services .service-block-2 .image-container {
+  background-image: url("/wp-content/themes/topline/library/images/roofing.png");
+}
+
+/* line 303, ../../scss/breakpoints/_base.scss */
+#third-section {
+  text-align: center;
+  font-size: 1.3em;
+}
+/* line 308, ../../scss/breakpoints/_base.scss */
+#third-section h2 {
+  color: #fff;
+  font-weight: bolder;
+}
+/* line 313, ../../scss/breakpoints/_base.scss */
+#third-section .block {
+  padding: 130px 0;
+  text-transform: uppercase;
+}
+/* line 317, ../../scss/breakpoints/_base.scss */
+#third-section #residential {
+  background: url("/wp-content/themes/topline/library/images/residential.png") no-repeat center center;
+  background-size: cover;
+}
+@media (min-width: 640px) {
+  /* line 317, ../../scss/breakpoints/_base.scss */
+  #third-section #residential {
+    width: 50%;
+    float: left;
+  }
+}
+/* line 325, ../../scss/breakpoints/_base.scss */
+#third-section #commercial {
+  background: url("/wp-content/themes/topline/library/images/commercial.png") no-repeat center center;
+  background-size: cover;
+}
+@media (min-width: 640px) {
+  /* line 325, ../../scss/breakpoints/_base.scss */
+  #third-section #commercial {
+    width: 50%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 336, ../../scss/breakpoints/_base.scss */
+.contact-area .contact-icon {
+  text-align: center;
+  margin: 35px 0;
+}
+/* line 340, ../../scss/breakpoints/_base.scss */
+.contact-area .contact-icon img {
+  height: 100px;
+}
+/* line 343, ../../scss/breakpoints/_base.scss */
+.contact-area .contact-icon h4 {
+  color: #00B57D;
+  font-weight: bolder;
+}
+@media (min-width: 640px) {
+  /* line 336, ../../scss/breakpoints/_base.scss */
+  .contact-area .contact-icon {
+    width: 33.33333%;
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+}
+/* line 355, ../../scss/breakpoints/_base.scss */
+.contact-area a {
+  text-decoration: none;
+}
+
+/*********************
+GALLERY STYLES
+*********************/
+/* line 365, ../../scss/breakpoints/_base.scss */
+#gallery {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  padding: 40px 0;
+}
+/* line 371, ../../scss/breakpoints/_base.scss */
+#gallery .envira-gallery-item-inner {
+  position: relative;
+}
+/* line 374, ../../scss/breakpoints/_base.scss */
+#gallery .envira-gallery-item-inner img {
+  width: 100%;
+  vertical-align: top;
+}
+/* line 379, ../../scss/breakpoints/_base.scss */
+#gallery .envira-gallery-item-inner:hover .overlay {
+  opacity: 0.6;
+}
+/* line 385, ../../scss/breakpoints/_base.scss */
+#gallery .overlay {
+  background-color: #00B57D;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s linear;
+}
+/* line 395, ../../scss/breakpoints/_base.scss */
+#gallery .overlay img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 406, ../../scss/breakpoints/_base.scss */
+#gallery .envira-tags-filter-link {
+  color: #00B57D;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+/* line 411, ../../scss/breakpoints/_base.scss */
+#gallery .envira-tags-filter-link:after {
+  content: " /";
+}
+/* line 415, ../../scss/breakpoints/_base.scss */
+#gallery .envira-tags-filter-link:last-child:after {
+  content: " ";
+}
+
+/*********************
+RESIDENIAL & COMMERCIAL TEMPLATE STYLES
+*********************/
+@media (min-width: 1100px) {
+  /* line 424, ../../scss/breakpoints/_base.scss */
+  #two-spacer {
+    width: 16.66667%;
+    float: left;
+  }
+}
+
+@media (min-width: 1100px) {
+  /* line 430, ../../scss/breakpoints/_base.scss */
+  #one-spacer {
+    width: 8.33333%;
+    float: left;
+  }
+}
+
+/* line 436, ../../scss/breakpoints/_base.scss */
+#sub-menu-section {
+  margin-bottom: 40px;
+}
+@media (min-width: 845px) {
+  /* line 436, ../../scss/breakpoints/_base.scss */
+  #sub-menu-section {
+    width: 41.66667%;
+    float: left;
+  }
+}
+@media (min-width: 1100px) {
+  /* line 436, ../../scss/breakpoints/_base.scss */
+  #sub-menu-section {
+    width: 25%;
+    float: left;
+  }
+}
+/* line 446, ../../scss/breakpoints/_base.scss */
+#sub-menu-section .sub-menu a {
+  text-decoration: none;
+  color: #878787;
+  font-family: "chaparral-pro", "chaparral-pro", "Georgia", Cambria, Times New Roman, Times, serif;
+  font-size: 1.3em;
+  margin: 15px 0;
+  border-bottom: 4px solid #fff;
+}
+/* line 453, ../../scss/breakpoints/_base.scss */
+#sub-menu-section .sub-menu a::before {
+  content: url("/wp-content/themes/topline/library/images/plus.png");
+  margin-right: 10px;
+}
+/* line 458, ../../scss/breakpoints/_base.scss */
+#sub-menu-section .sub-menu a:hover {
+  border-bottom: 4px solid #777777;
+}
+/* line 462, ../../scss/breakpoints/_base.scss */
+#sub-menu-section .sub-menu a:hover::before {
+  border-bottom: 4px solid #E4E9DF;
+}
+/* line 470, ../../scss/breakpoints/_base.scss */
+#sub-menu-section .wpsm-menu.menu_enhance li {
+  margin: 10px 0 !important;
+}
+
+/* line 478, ../../scss/breakpoints/_base.scss */
+.descriptive-text {
+  font-size: 1.3em;
+  margin: 30px;
+}
+@media (min-width: 845px) {
+  /* line 478, ../../scss/breakpoints/_base.scss */
+  .descriptive-text {
+    width: 41.66667%;
+    float: left;
+  }
+}
+
+/*********************
+CONTACT FORM STYLES
+*********************/
+/* line 490, ../../scss/breakpoints/_base.scss */
+.wpcf7 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 1100px) {
+  /* line 490, ../../scss/breakpoints/_base.scss */
+  .wpcf7 {
+    width: 66.66667%;
+    float: left;
+    margin: 0 auto;
+  }
+}
+/* line 498, ../../scss/breakpoints/_base.scss */
+.wpcf7 p {
+  font-family: "futura", "Futura PT", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #00B57D;
+  font-size: 1.3em;
+}
+/* line 505, ../../scss/breakpoints/_base.scss */
+.wpcf7 input[type='submit'] {
+  border-style: none;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #00B57D;
+  border-radius: 5px;
+  width: 150px;
+  transition: background-color 0.14s ease-in-out;
+}
+/* line 516, ../../scss/breakpoints/_base.scss */
+.wpcf7 input[type='submit']:hover, .wpcf7 input[type='submit']:focus {
+  text-decoration: none;
+  outline: none;
+  background-color: #00a16f;
+}
+/* line 523, ../../scss/breakpoints/_base.scss */
+.wpcf7 input[type='submit']:active {
+  top: 1px;
+  background-color: #00a16f;
+}
+/* line 529, ../../scss/breakpoints/_base.scss */
+.wpcf7 textarea {
+  width: 500px;
+}
+
+/******************************************************************
+SINGLE SERVICE PAGES
+******************************************************************/
+/* line 542, ../../scss/breakpoints/_base.scss */
+#service-information #image-container {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 800px) {
+  /* line 542, ../../scss/breakpoints/_base.scss */
+  #service-information #image-container {
+    width: 31.91489%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+}
+/* line 548, ../../scss/breakpoints/_base.scss */
+#service-information #image-container img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 555, ../../scss/breakpoints/_base.scss */
+#service-information #main-description {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 800px) {
+  /* line 555, ../../scss/breakpoints/_base.scss */
+  #service-information #main-description {
+    width: 48.93617%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+}
+/* line 562, ../../scss/breakpoints/_base.scss */
+#service-information #meta-content {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 565, ../../scss/breakpoints/_base.scss */
+#service-information #meta-content #warranty-information {
+  width: 40.42553%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 569, ../../scss/breakpoints/_base.scss */
+#service-information #meta-content #supplier-logos {
+  margin-bottom: 30px;
+  width: 40.42553%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 573, ../../scss/breakpoints/_base.scss */
+#service-information #meta-content #supplier-logos img {
+  max-width: 200px;
+  height: auto;
+}
+@media (min-width: 640px) {
+  /* line 569, ../../scss/breakpoints/_base.scss */
+  #service-information #meta-content #supplier-logos {
+    margin-bottom: 60px;
+  }
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -2249,7 +1929,7 @@ tweeners.
   *********************/
   /* line 29, ../../scss/breakpoints/_481up.scss */
   .banner {
-    background-image: url("/Topline/wp-content/uploads/2015/05/banner-481-768.png");
+    background-image: url("/wp-content/themes/topline/library/images/banner-481-768.png");
     font-size: 2em;
     padding-left: 10%;
     padding-right: 10%;
@@ -2264,78 +1944,11 @@ tweeners.
     margin: 50px 0;
   }
 
-  /* line 49, ../../scss/breakpoints/_481up.scss */
+  /* line 47, ../../scss/breakpoints/_481up.scss */
   .service-block .feat-img {
-    width: 48.57143%;
+    width: 48.93617%;
     float: left;
   }
-
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* .menu is clearfixed inside mixins.scss */
-  /* line 61, ../../scss/breakpoints/_481up.scss */
-  .menu {
-    /* end .menu ul */
-  }
-  /* line 62, ../../scss/breakpoints/_481up.scss */
-  .menu ul {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
-  }
-  /* line 63, ../../scss/breakpoints/_481up.scss */
-  .menu ul li {
-    /*
-    plan your menus and drop-downs wisely.
-    */
-  }
-  /* line 64, ../../scss/breakpoints/_481up.scss */
-  .menu ul li a {
-    /*
-    you can use hover styles here even though this size
-    has the possibility of being a mobile device.
-    */
-  }
-
-  /* end .menu */
-  /*********************
-  POSTS & CONTENT STYLES
-  *********************/
-  /* entry content */
-  /* line 109, ../../scss/breakpoints/_481up.scss */
-  .entry-content {
-    /* at this larger size, we can start to align images */
-  }
-  /* line 113, ../../scss/breakpoints/_481up.scss */
-  .entry-content .alignleft, .entry-content img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-    float: left;
-  }
-  /* line 118, ../../scss/breakpoints/_481up.scss */
-  .entry-content .alignright, .entry-content img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-    float: right;
-  }
-  /* line 123, ../../scss/breakpoints/_481up.scss */
-  .entry-content .aligncenter, .entry-content img.aligncenter {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    clear: both;
-  }
-
-  /* end .entry-content */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  check your menus here. do they look good?
-  do they need tweaking?
-  */
-  /* end .footer-links */
 }
 /*********************
 TABLET & SMALLER LAPTOPS
@@ -2357,170 +1970,19 @@ you can add resource intensive styles.
   come into play. Have fun!
   
   ******************************************************************/
-  /*********************
-  HOMEPAGE STYLES
-  *********************/
-  /* line 20, ../../scss/breakpoints/_768up.scss */
+  /* line 15, ../../scss/breakpoints/_768up.scss */
   .banner {
-    background-image: url("/Topline/wp-content/uploads/2015/05/banner-768-1030.png");
+    background-image: url("/wp-content/themes/topline/library/images/banner-768-1030.png");
     font-size: 2.5em;
   }
 
   /*********************
-  GENERAL STYLES
-  *********************/
-  /*********************
   LAYOUT & GRID STYLES
   *********************/
-  /* line 39, ../../scss/breakpoints/_768up.scss */
+  /* line 24, ../../scss/breakpoints/_768up.scss */
   .wrap {
     width: 760px;
   }
-
-  /*********************
-  HEADER STYLES
-  *********************/
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* line 55, ../../scss/breakpoints/_768up.scss */
-  .nav {
-    border: 0;
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
-  }
-  /* line 57, ../../scss/breakpoints/_768up.scss */
-  .nav ul {
-    margin-top: 0;
-  }
-  /* line 60, ../../scss/breakpoints/_768up.scss */
-  .nav li {
-    float: left;
-    position: relative;
-    /*
-    plan your menus and drop-downs wisely.
-    */
-    /* showing sub-menus */
-  }
-  /* line 64, ../../scss/breakpoints/_768up.scss */
-  .nav li a {
-    border-bottom: 4px solid #fff;
-    /*
-    you can use hover styles here even though this size
-    has the possibility of being a mobile device.
-    */
-  }
-  /* line 71, ../../scss/breakpoints/_768up.scss */
-  .nav li a:hover, .nav li a:focus {
-    border-bottom: 4px solid #002654;
-  }
-  /* line 82, ../../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu,
-  .nav li ul.children {
-    margin-top: 0;
-    border: 1px solid #ccc;
-    border-top: 0;
-    position: absolute;
-    visibility: hidden;
-    z-index: 8999;
-    /* highlight sub-menu current page */
-  }
-  /* line 91, ../../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li,
-  .nav li ul.children li {
-    /*
-    if you need to go deeper, go nuts
-    just remember deeper menus suck
-    for usability. k, bai.
-    */
-  }
-  /* line 93, ../../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li a,
-  .nav li ul.children li a {
-    padding-left: 10px;
-    border-right: 0;
-    display: block;
-    width: 180px;
-    border-bottom: 1px solid #ccc;
-  }
-  /* line 110, ../../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li:last-child a,
-  .nav li ul.children li:last-child a {
-    border-bottom: 0;
-  }
-  /* line 120, ../../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li ul,
-  .nav li ul.children li ul {
-    top: 0;
-    left: 100%;
-  }
-  /* line 135, ../../scss/breakpoints/_768up.scss */
-  .nav li:hover > ul {
-    top: auto;
-    visibility: visible;
-  }
-
-  /* end .nav */
-  /*********************
-  SIDEBARS & ASIDES
-  *********************/
-  /* line 155, ../../scss/breakpoints/_768up.scss */
-  .sidebar {
-    margin-top: 2.2em;
-  }
-
-  /* line 159, ../../scss/breakpoints/_768up.scss */
-  .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em;
-  }
-
-  /* line 164, ../../scss/breakpoints/_768up.scss */
-  .widget {
-    padding: 0 10px;
-    margin: 2.2em 0;
-  }
-  /* line 169, ../../scss/breakpoints/_768up.scss */
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */
-  }
-  /* line 177, ../../scss/breakpoints/_768up.scss */
-  .widget ul li ul {
-    margin-top: 0.75em;
-    padding-left: 1em;
-  }
-
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  you'll probably need to do quite a bit
-  of overriding here if you styled them for
-  mobile. Make sure to double check these!
-  */
-  /* line 285, ../../scss/breakpoints/_768up.scss */
-  .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */
-  }
-
-  /* end .footer-links */
 }
 /*********************
 DESKTOP
@@ -2544,15 +2006,14 @@ you can add resource intensive styles.
   *********************/
   /* line 17, ../../scss/breakpoints/_1030up.scss */
   .banner {
-    background-image: url("/Topline/wp-content/uploads/2015/05/banner-1030-1240.png");
-    font-size: 2.8em;
+    background-image: url("/wp-content/themes/topline/library/images/banner-1030-1240.png");
   }
-  /* line 20, ../../scss/breakpoints/_1030up.scss */
+  /* line 19, ../../scss/breakpoints/_1030up.scss */
   .banner .banner-content {
     margin: 40px 0;
   }
 
-  /* line 25, ../../scss/breakpoints/_1030up.scss */
+  /* line 24, ../../scss/breakpoints/_1030up.scss */
   .wrap {
     width: 1040px;
   }
@@ -2577,7 +2038,7 @@ This is for the larger monitors and possibly full screen viewers.
   *********************/
   /* line 16, ../../scss/breakpoints/_1240up.scss */
   .banner {
-    background-image: url("/Topline/wp-content/uploads/2015/05/banner-1240-up.png");
+    background-image: url("/wp-content/themes/topline/library/images/banner-1240-up.png");
     padding-left: 15%;
     padding-right: 15%;
   }
@@ -2635,7 +2096,7 @@ query for retina AND a certain size if you want. Go Nuts.
   */
   /* line 43, ../../scss/breakpoints/_2x.scss */
   .banner {
-    background-image: url("/Topline/wp-content/uploads/2015/05/banner-481-768.png");
+    background-image: url("/wp-content/themes/topline/library/images/banner-481-768.png");
     font-size: 1.7em;
   }
 }

@@ -28,7 +28,7 @@ function bones_ahoy() {
   load_theme_textdomain( 'bonestheme', get_template_directory() . '/library/translation' );
 
   // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
-  require_once( 'library/custom-post-type.php' );
+  // require_once( 'library/custom-post-type.php' );
 
   // launching operation cleanup
   add_action( 'init', 'bones_head_cleanup' );
@@ -134,11 +134,11 @@ function bones_theme_customizer($wp_customize) {
   //
   // Uncomment the below lines to remove the default customize sections 
 
-  // $wp_customize->remove_section('title_tagline');
-  // $wp_customize->remove_section('colors');
-  // $wp_customize->remove_section('background_image');
-  // $wp_customize->remove_section('static_front_page');
-  // $wp_customize->remove_section('nav');
+  $wp_customize->remove_section('title_tagline');
+  $wp_customize->remove_section('colors');
+  $wp_customize->remove_section('background_image');
+  $wp_customize->remove_section('static_front_page');
+  $wp_customize->remove_section('nav');
 
   // Uncomment the below lines to remove the default controls
   // $wp_customize->remove_control('blogdescription');

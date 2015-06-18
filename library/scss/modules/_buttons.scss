@@ -8,18 +8,19 @@ Site Name: Topline Roofing & Wall Services
 %btn {
   display: inline-block;
   position: relative;
-  font-family: 'futura';
+  font-family: 'futura', $sans-serif;
   text-decoration: none;
+  text-transform: uppercase;
   color: $white;
+  font-size: 1.1em;
   line-height: 34px;
-  border-radius: 3px;
+  border-radius: 5px;
   border: 0;
   cursor: pointer;
   @include transition(background-color 0.14s ease-in-out);
 
   // hovering on the btn
   &:hover, &:focus {
-    background-color: darken($topline-green, 6%);
     text-decoration: none;
     outline: none;
   } // end hover
@@ -54,12 +55,59 @@ and it will create a button dependant on those variables.
 .green-btn {
   @extend %btn;
   background-color: $topline-green;
-  text-transform: uppercase;
   box-shadow: 0px 2px 0 #113A0E;
   padding: 10px 20px;
-  font-size: 0.56em;
+  // font-size: 0.56em;
+  @include transition(all 0.35s ease);
+  &:hover, &:focus {
+    background-color: darken($topline-green, 6%);
+  } 
 }
 
+.clear-btn {
+  @extend %btn;
+  background-color: white(0.1);
+  padding: 10px 25px;
+  border: 2.3px solid white;
+  font-weight:bolder;
+  overflow: hidden; 
+  height: 2.8em;
+  position:relative;
+  @include transition(all 0.35s ease);
+
+    &:hover {
+     line-height: 8em; 
+
+      &:before{
+        content: attr(data-text);
+        position: absolute;
+        top: -2.75em;
+      }
+    }
+}
+
+.clear-green-btn {
+  @extend %btn;
+  background-color: white(0.1);
+  padding: 4px 25px;
+  border: 2.3px solid $topline-green;
+  font-weight: bolder;
+  color: $topline-green;
+  overflow: hidden;
+  height: 2.75em;
+  position: relative;
+  @include transition(all 0.35s ease);
+
+   &:hover {
+     line-height: 8em; 
+
+      &:before{
+        content: attr(data-text);
+        position: absolute;
+        top: -2.75em;
+      }
+    }
+}
 
 
 

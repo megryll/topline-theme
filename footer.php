@@ -1,4 +1,7 @@
+
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+
+				<div class="footer-image"></div>
 
 				<div id="inner-footer" class="wrap cf">
 
@@ -18,11 +21,12 @@
 						)); ?>
 					</nav>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 
 				</div>
 
 			</footer>
+			<footer class="bottom-footer"><p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p><p class="branding">Website by <a href="http://www.northstudio.com" target="_blank">North Studio</a></p></footer>
+
 
 		</div>
 
@@ -31,4 +35,4 @@
 		<script src="//localhost:35729/livereload.js"></script> 
 	</body>
 
-</html> <!-- end of site. what a ride! -->
+</html> 

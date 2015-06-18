@@ -6,7 +6,7 @@ Stylesheet: Variables
 Here is where we declare all our variables like colors, fonts,
 base values, and defaults. We want to make sure this file ONLY
 contains variables that way our files don't get all messy.
-No one likes a mess.
+No one likes a mess. 
 
 ******************************************************************/
 
@@ -36,7 +36,7 @@ $green:             #7dd667;
 $blue:              #2980b9;
 $bright-blue: 		#0080D6;
 
-$link-color:        $blue;
+$link-color:        $white;
 $link-hover:        darken($link-color, 9%);
 
 $border-color:      #ccc;
@@ -44,8 +44,10 @@ $disabled-gray:     #cfcfcf;
 
 
 $topline-blue: #1D5E82;
-$topline-green: #85C72C;
+$topline-green: #00B57D;
 $dark-blue: #002654;
+$light-green: #B6D8CA;
+$dark-grey: #878787;
 
 
 /*
